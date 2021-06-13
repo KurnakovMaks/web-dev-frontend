@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Main page </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <center><h1> Пройти тест </h1></center>
+        <form name="test_kur" class="register" method="post" onsubmit="return hw();">
+            
+            <div class="test_block">
+                <hr>
+                13. Что не содержит словарь проектов? <br>
+                <input class="input-field" 
+                required placeholder="Ответ сюда"
+                    type="text" size="25"
+                    name="q13_text"/> <br>
+
+                    <hr>
+                    16. К какой нормальной форме необходимо привести схему данных для ее нормализации? <br>
+                    <input class="input-field"
+                    input required placeholder="(число)"
+                    type="text" size="25"
+                    name="q16_text"/> <br>
+
+                    <hr>
+                    28. Сколько спецификаций строится для одного проекта? <br>
+                    <input class="input-field"
+                    input required placeholder="(число)"
+                    type="text" size="25"
+                    name="q28_text"/>
+                
+                    <hr>
+                    3. Основными понятиями объектно-ориентированного подхода являются ... <br>
+                    Класс и переменные <input name="q3_radio" type="radio" value="0" required placeholder=""> <br>
+                    Объект и состояние <input name="q3_radio" type="radio" value="0" required placeholder=""> <br>
+                    Объект и экземпляр <input name="q3_radio" type="radio" value="0" required placeholder=""> <br>
+                    Класс и объект <input name="q3_radio" type="radio" value="1" required placeholder=""> <br>
+
+                    <hr>
+                    11. Являются ли Flow-формы визуальным языком проектирования спецификаций? <br>
+                    Верно <input name="q11_radio" type="radio" value="1" required placeholder=""> <br>
+                    Неверно <input name="q11_radio" type="radio" value="0" required placeholder=""> <br>
+
+                    <hr>
+                    15. Определяются ли критерии оценки результатов при постановке задачи? <br>
+                    Да <input name="q15_radio" type="radio" value="1" required placeholder=""> <br>
+                    Зависит от случая <input name="q15_radio" type="radio" value="0" required placeholder=""> <br>
+                    Нет <input name="q15_radio" type="radio" value="0" required placeholder=""> <br>
+                    
+                    <hr>
+                    45. Что входит в архитектуру CASE-средств? <br>
+                    Верификатор диаграмм<input name="q45_check" type="checkbox" value="1"> <br>
+                    Администратор проекта<input name="q45_check" type="checkbox" value="1"> <br>
+                    Сервис<input name="q45_check" type="checkbox" value="1"> <br>
+                    ТЗ создания ИС<input name="q45_check" type="checkbox" value="0"> <br>
+
+                    <hr>
+                    20. Какие связи существуют между вариантами использования в диаграмме вариантов использования? <br>
+                    Сужения<input name="q20_check" type="checkbox" value="0"> <br>
+                    Расширения<input name="q20_check" type="checkbox" value="1"> <br>
+                    Использования<input name="q20_check" type="checkbox" value="1"> <br>
+                    Взаимодействия<input name="q20_check" type="checkbox" value="1"> <br>
+
+                    <hr>
+                    26. Какие нотации используются при построении DFD? <br>
+                    Gane-Sarson<input name="q26_check" type="checkbox" value="1"> <br>
+                    Votollo<input name="q26_check" type="checkbox" value="0"><br>
+                    Yourdon<input name="q26_check" type="checkbox" value="1"><br>
+                    Yodan<input name="q26_check" type="checkbox" value="0"><br>
+
+                    <hr>
+                    Какой Пол снимался в серии фильмов "Форсаж"?
+                    <select name="q999_select"  
+                    required placeholder="">
+                        <option value="male"> Уокер </option>
+                        <option value="female"> МакКартни </option>
+                    </select>
+
+                    <hr>
+                </div>
+                
+                <center> <div class="form-bottom">
+                        <input type="submit" value="Зарегистрироваться">
+                    </div> </center>
+                
+        </form>
+    </body>
+</html>

@@ -1,0 +1,3 @@
+<link rel = "stylesheet" type="text/css" media="screen and (min-width:769px) and (max-width:1170px)" href="style1.css">
+@media screen and (min-width:769px) and (max-width:1170px)
+<meta name="viewport" content="width=device-width"/>
