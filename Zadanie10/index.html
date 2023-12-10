@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kurnakov_Z10</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <h1>XML to JSON Converter</h1>
+
+  <label for="xmlInput">XML Input:</label>
+  <textarea id="xmlInput">
+  <games>
+      <game id="1">
+          <title>Mario Kart 8 Deluxe</title>
+          <genre>Racing</genre>
+          <release_year>2017</release_year>
+          <platform>Nintendo Switch</platform>
+      </game>
+      
+      <game id="2">
+          <title>The Legend of Zelda: Breath of the Wild</title>
+          <genre>Action-Adventure</genre>
+          <release_year>2017</release_year>
+          <platform>Nintendo Switch</platform>
+      </game>
+  </games>
+</textarea>
+
+
+  <button onclick="convertXMLtoJSON()">Convert XML to JSON</button>
+
+  <label for="jsonInput">JSON Input:</label>
+  <textarea id="jsonInput"></textarea>
+
+  <!-- <button onclick="convertJSONtoXML()">Convert JSON to XML</button> -->
+
+
+
+
+</body>
+</html>
