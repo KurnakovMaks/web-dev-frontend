@@ -1,0 +1,361 @@
+/* кнопки */
+@font-face {
+	font-family: "Quicksand_Bold";
+	src: url(./font/Quicksand_Bold.otf);
+	font-style: normal;
+	font-weight: bold;
+}
+@bold: Quicksand_Bold;
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #d3a7ac;
+	width: 80%;
+	margin: auto;
+}
+.ppicture {
+	position: absolute;
+	top: 0;
+	width: 80%;
+	z-index: -1;
+}
+.title_card {
+	min-height: 790px;
+	width: auto;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	z-index: 1;
+}
+.our_clothing {
+	font-size: 30px;
+	font-family: @bold;
+	z-index: 1;
+}
+.lorem_center {
+	width: 800px;
+	padding: 25px 0 0 0;
+	font-size: 24px;
+	font-family: @bold;
+}
+.first_menu {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 80%;
+	margin-top: 64px;
+}
+.boot {
+	margin-left: 50px;
+}
+.home_products_cart {
+	color: white;
+	margin-right: 50px;
+}
+li {
+	display: inline-block;
+	margin: 10px 53px 0 0;
+	font-family: @bold;
+	font-size: 18px;
+}
+.white_v {
+	position: relative;
+	margin: auto;
+	display: flex;
+}
+.filter {
+	height: 143px;
+	background-color: #f5f6f7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+.custom-checkbox_men {
+	margin-left: 95px;
+}
+.three_category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.custom {
+	display: flex;
+	align-items: center;
+	margin-right: 45px;
+}
+input[type=checkbox] {
+	width: 25px;
+	height: 24px;
+}
+label {
+	font-size: 14px;
+	font-family: @bold;
+	padding: 0 40px 0 18px;
+}
+.button_set_all_products {
+	margin-right: 9vmin;
+}
+.set_all_products {
+	height: 52px;
+	max-width: 204px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-family: @bold;
+	color: white;
+	background-color: #aa9b77;
+	border: none;
+	border-radius: 3px;
+}
+.clothes {
+	position: relative;
+	height: 1307px;
+	background-color: #ffffff;
+	margin: auto;
+}
+.clothes_men {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.clothes_women {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.block {
+	height: 378px;
+	width: 320px;
+	background-color: #f5f6f7;
+	position: relative;
+	margin-top: 17px;
+}
+.men_tire {
+	padding-top: 87px;
+}
+.men {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	font-family: @bold;
+	margin-left: 23vmin;
+	margin-bottom: 49px;
+	&:after {
+		content: "";
+		flex: 1 1;
+		border-bottom: 2px solid #cccccc;
+		margin: auto 23vmin auto 52px;
+	}
+}
+.leaf {
+	color: #ac9e7b;
+	font-size: 16px;
+	font-family: @bold;
+}
+.leaf_1 {
+	display: flex;
+	justify-content: end;
+	margin-right: 23vmin;
+}
+.leaf_2 {
+	margin-left: 23vmin;
+}
+.block1 {
+	background-image: url(./clothes/t_shirt_man.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 100px;
+	border: 6px solid #aa9b77;
+}
+.block2 {
+	background-image: url(./clothes/pants.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 64px;
+	margin-left: 64px;
+}
+.block3 {
+	background-image: url(./clothes/backpack.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 100px;
+}
+.size {
+	padding: 25px 0 0 27px;
+}
+.circles {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 23px 25px 0 0;
+}
+.circle {
+	display: inline-flex;
+	height: 21px;
+	width: 22px;
+	border-radius: 50%;
+	background-color: #535253;
+	margin: 0 0 0 5px;
+}
+.circle1 {
+	background-color: #165eb9;
+}
+.circle2 {
+	background-color: #ffe637;
+}
+.circle3 {
+	background-color: #535253;
+}
+.circle4 {
+	background-color: #d3a7ac;
+}
+.circle5 {
+	background-color: #ffffff;
+}
+.things {
+	position: absolute;
+	bottom: 0;
+	color: #aa9b77;
+	padding: 0 0 26px 25px;
+}
+.price {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 20px 24px 0;
+}
+.women {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	font-family: @bold;
+	margin-right: 23vmin;
+	margin-bottom: 49px;
+	&:before {
+		content: "";
+		flex: 1 1;
+		border-bottom: 2px solid #cccccc;
+		margin: auto 52px auto 23vmin;
+	}
+}
+.block4 {
+	background-image: url(./clothes/jacket.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 100px;
+}
+.block5 {
+	background-image: url(./clothes/boot.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 64px;
+	margin-left: 64px;
+}
+.block6 {
+	background-image: url(./clothes/t_shirt_woman.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 100px;
+}
+fieldset {
+	border: 2px solid #918363;
+	height: 254px;
+	width: 713px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	font-family: @bold;
+	font-size: 16px;
+	line-height: 24px;
+}
+legend {
+	margin-top: 80px;
+	padding: 0 13px;
+	border: none;
+	font-size: 16px;
+	color: #837659;
+	text-transform: uppercase;
+	text-align: center;
+}
+.about_us_lorem {
+	height: 402px;
+	background-color: #aa9b77;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bird {
+	margin-right: 15px;
+	margin-left: 69px;
+}
+q {
+	quotes: initial;
+}
+.e-commerce {
+	position: relative;
+	height: 70px;
+	background-color: #535253;
+	color: #ffffff;
+	font-family: @bold;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+footer {
+	height: 352px;
+	background-color: #424242;
+	color: #ffffff;
+	position: relative;
+}
+.trekking_lorem {
+	position: absolute;
+	font-family: @bold;
+	text-transform: uppercase;
+	margin-left: 64px;
+	margin-top: 109px;
+	width: 310px;
+	line-height: 20px;
+}
+.trekking {
+	font-size: 20px;
+}
+.footer_lorem {
+	font-size: 10px;
+	margin-left: 1px;
+	margin-top: 22px;
+}
+.second_menu_design {
+	position: relative;
+	float: right;
+	justify-content: flex-end;
+	margin-top: 157px;
+	margin-right: 65px;
+	line-height: 16px;
+}
+.ul_li {
+	display: flex;
+	padding: 3px;
+}
+.end {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 6px;
+	list-style-type: none;
+	border-left: 2px solid;
+	border-image: linear-gradient(to right,#aa9b77, #5c584f) 0 100%;
+}
+.second_menu {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.design {
+	font-family: @bold;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-left: 65px;
+}
