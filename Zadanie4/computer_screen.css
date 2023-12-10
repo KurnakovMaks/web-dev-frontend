@@ -1,7 +1,6 @@
-/* кнопки */
 @font-face {
   font-family: "Quicksand_Bold";
-  src: url(font/Quicksand_Bold.otf);
+  src: url(/template/font/Quicksand_Bold.otf);
   font-style: normal;
   font-weight: bold;
 }
@@ -9,15 +8,15 @@
   margin: 0;
   padding: 0;
 }
-body {
+/* body {
   background-color: #d3a7ac;
   width: 80%;
   margin: auto;
-}
-.ppicture {
+} */
+.picture {
   position: absolute;
   top: 0;
-  width: 80%;
+  /* width: 80%; */
   z-index: -1;
 }
 .title_card {
@@ -38,7 +37,7 @@ body {
 .lorem_center {
   width: 800px;
   padding: 25px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
   font-family: Quicksand_Bold;
 }
 .first_menu {
