@@ -1,0 +1,919 @@
+<!-- <!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <title>Kurnakov_Z4</title>
+</head>
+
+<body>
+    <header>
+        <div><img class="picture" src="./template/images/livello_1.png" alt="main.png"></div>
+        <div class="title_card">
+            <div class="title_card_text">
+                <h1>
+                Our clothing, your comfort   
+                </h1>
+                <div class="title_card_text_center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                </div>
+            </div>
+        </div>
+        <nav class="first_menu">
+            <div class="boot">
+                <img src="./template/images/icons/livello_8.png" alt="logo_boot">
+            </div>
+            <ul class="title_card_menu">
+                <li>Home</li>
+                <li>Products</li>
+                <li><img class="cart" src="./template/images/icons/fa-shopping-cart.png" alt="cart"></li>
+            </ul>
+        </nav>
+       
+        <img class="white_v" src="./template/images/icons/fa-chevron-down.png" alt="white_v">
+    </header> -->
+
+
+
+    <!DOCTYPE html>
+    <html amp lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kurnakov_Z4</title>
+        <link rel="canonical" href="https://kurnakovmaks.github.io/web-dev-frontend/Zadanie4/">
+    
+        <!-- AMP CSS -->
+        <style amp-custom>
+            @font-face {
+  font-family: "Quicksand_Bold";
+  src: url(./template/font/Quicksand_Bold.otf);
+  font-style: normal;
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+.picture {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  z-index: -1;
+}
+.title_card {
+  min-height: 790px;
+  width: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+}
+.title_card_text {
+  font-size: 30px;
+  font-family: Quicksand_Bold;
+  z-index: 1;
+}
+.title_card_text_center {
+  width: 800px;
+  padding: 25px 0 0 0;
+  font-size: 24px;
+  font-family: Quicksand_Bold;
+}
+.first_menu {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+  margin-top: 64px;
+}
+.boot {
+  margin-left: 50px;
+}
+.title_card_menu {
+  color: white;
+  margin-right: 50px;
+}
+li {
+  display: inline-block;
+  margin: 10px 53px 0 0;
+  font-family: Quicksand_Bold;
+  font-size: 18px;
+}
+.white_v {
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+.filter {
+  height: 143px;
+  background-color: #f5f6f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.custom-checkbox_men {
+  margin-left: 95px;
+}
+.three_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+}
+input[type=checkbox] {
+  width: 25px;
+  height: 24px;
+}
+label {
+  font-size: 14px;
+  font-family: Quicksand_Bold;
+  padding: 0 40px 0 18px;
+}
+.button_set_all_products {
+  margin-right: 9vmin;
+}
+.set_all_products {
+  height: 52px;
+  max-width: 204px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: Quicksand_Bold;
+  color: white;
+  background-color: #aa9b77;
+  border: none;
+  border-radius: 3px;
+}
+.clothes {
+  position: relative;
+  height: 1307px;
+  background-color: #ffffff;
+  margin: auto;
+}
+.clothes_men {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.clothes_women {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block {
+  height: 378px;
+  width: 320px;
+  background-color: #f5f6f7;
+  position: relative;
+  margin-top: 17px;
+}
+.men_tire {
+  padding-top: 87px;
+}
+.men {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Quicksand_Bold;
+  margin-left: 23vmin;
+  margin-bottom: 49px;
+}
+.men:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #cccccc;
+  margin: auto 23vmin auto 52px;
+}
+.leaf {
+  color: #ac9e7b;
+  font-size: 16px;
+  font-family: Quicksand_Bold;
+}
+.leaf_1 {
+  display: flex;
+  justify-content: end;
+  margin-right: 23vmin;
+}
+.leaf_2 {
+  margin-left: 23vmin;
+}
+.block1 {
+  background-image: url(./template/images/ware/livello_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 100px;
+  border: 6px solid #aa9b77;
+}
+.block2 {
+  background-image: url(./template/images/ware/livello_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 64px;
+  margin-left: 64px;
+}
+.block3 {
+  background-image: url(./template/images/ware/livello_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 100px;
+}
+.size {
+  padding: 25px 0 0 27px;
+}
+.circles {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 23px 25px 0 0;
+}
+.circle {
+  display: inline-flex;
+  height: 21px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #535253;
+  margin: 0 0 0 5px;
+}
+.circle1 {
+  background-color: #165eb9;
+}
+.circle2 {
+  background-color: #ffe637;
+}
+.circle3 {
+  background-color: #535253;
+}
+.circle4 {
+  background-color: #d3a7ac;
+}
+.circle5 {
+  background-color: #ffffff;
+}
+.things {
+  position: absolute;
+  bottom: 0;
+  color: #aa9b77;
+  padding: 0 0 26px 25px;
+}
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 20px 24px 0;
+}
+.women {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: Quicksand_Bold;
+  margin-right: 23vmin;
+  margin-bottom: 49px;
+}
+.women:before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #cccccc;
+  margin: auto 52px auto 23vmin;
+}
+.block4 {
+  background-image: url(./template/images/ware/livello_5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 100px;
+}
+.block5 {
+  background-image: url(./template/images/ware/livello_6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 64px;
+  margin-left: 64px;
+}
+.block6 {
+  background-image: url(./template/images/ware/livello_7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 100px;
+}
+fieldset {
+  border: 2px solid #918363;
+  height: 254px;
+  width: 713px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: Quicksand_Bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+legend {
+  margin-top: 80px;
+  padding: 0 13px;
+  border: none;
+  font-size: 16px;
+  color: #837659;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about_us_lorem {
+  height: 402px;
+  background-color: #aa9b77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bird {
+  margin-right: 15px;
+  margin-left: 69px;
+}
+q {
+  quotes: initial;
+}
+.e-commerce {
+  position: relative;
+  height: 70px;
+  background-color: #535253;
+  color: #ffffff;
+  font-family: Quicksand_Bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+footer {
+  height: 352px;
+  background-color: #424242;
+  color: #ffffff;
+  position: relative;
+}
+.trekking_lorem {
+  position: absolute;
+  font-family: Quicksand_Bold;
+  text-transform: uppercase;
+  margin-left: 64px;
+  margin-top: 109px;
+  width: 310px;
+  line-height: 20px;
+}
+.trekking {
+  font-size: 20px;
+}
+.footer_lorem {
+  font-size: 10px;
+  margin-left: 1px;
+  margin-top: 22px;
+}
+.second_menu_design {
+  position: relative;
+  float: right;
+  justify-content: flex-end;
+  margin-top: 157px;
+  margin-right: 65px;
+  line-height: 16px;
+}
+.ul_li {
+  display: flex;
+  padding: 3px;
+}
+.end {
+  margin: 0 0 0 10px;
+  padding: 0 0 0 6px;
+  list-style-type: none;
+  border-left: 2px solid;
+  border-image: linear-gradient(to right,#aa9b77,#5c584f) 0 100%;
+}
+.second_menu {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.design {
+  font-family: Quicksand_Bold;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 65px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
+  .title_card {
+    min-height: auto;
+  }
+  .first_menu {
+    width: 100%;
+    margin-top: 0;
+  }
+  .boot {
+    margin-left: 0;
+  }
+  .title_card_menu {
+    margin-right: 0;
+  }
+  li {
+    margin: 10px 20px 0 0;
+  }
+  .filter {
+    height: auto;
+    justify-content: center;
+  }
+  .custom-checkbox_men {
+    margin-left: 0;
+  }
+  .leaf_1,
+  .leaf_2 {
+    margin: 0;
+  }
+  .men,
+  .women {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6 {
+    margin: 0;
+  }
+  .trekking_lorem {
+    margin-left: 0;
+  }
+  .second_menu_design {
+    margin-top: 0;
+    margin-right: 20px;
+  }
+  .end {
+    margin: 0;
+  }
+  .design {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  .picture {
+    width: 100%;
+  }
+  .title_card {
+    min-height: auto;
+    text-align: center;
+  }
+  .first_menu {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boot {
+    margin-left: 0;
+  }
+  .title_card_menu {
+    margin-right: 0;
+  }
+  li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .white_v {
+    flex-direction: column;
+  }
+  .filter {
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .custom-checkbox_men {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .three_category {
+    flex-direction: column;
+  }
+  label {
+    padding: 0 0 10px 0;
+  }
+  .button_set_all_products {
+    margin: 10px 0;
+  }
+  .clothes {
+    height: auto;
+  }
+  .clothes_men,
+  .clothes_women {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block {
+    margin: 10px 0;
+  }
+  .men_tire,
+  .women {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .leaf_1,
+  .leaf_2 {
+    margin: 0;
+  }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6 {
+    margin: 10px 0;
+  }
+  .size {
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .circles {
+    position: static;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .things,
+  .price {
+    position: static;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer_lorem {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .second_menu_design {
+    margin-top: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .ul_li {
+    flex-direction: column;
+    align-items: center;
+  }
+  .end {
+    margin: 10px 0;
+    padding: 0;
+  }
+  .second_menu {
+    font-size: 16px;
+  }
+  .design {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .picture {
+    width: 100%;
+  }
+  .title_card {
+    min-height: auto;
+    text-align: center;
+  }
+  .first_menu {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boot {
+    margin-left: 0;
+  }
+  .title_card_menu {
+    margin-right: 0;
+  }
+  li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .white_v {
+    flex-direction: column;
+  }
+  .filter {
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .custom-checkbox_men {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .three_category {
+    flex-direction: column;
+  }
+  label {
+    padding: 0 0 10px 0;
+  }
+  .button_set_all_products {
+    margin: 10px 0;
+  }
+  .clothes {
+    height: auto;
+  }
+  .clothes_men,
+  .clothes_women {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block {
+    margin: 10px 0;
+  }
+  .men_tire,
+  .women {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .leaf_1,
+  .leaf_2 {
+    margin: 0;
+  }
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6 {
+    margin: 10px 0;
+  }
+  .size {
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .circles {
+    position: static;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .things,
+  .price {
+    position: static;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer_lorem {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .trekking_lorem {
+    margin-left: 0;
+  }
+  .trekking {
+    font-size: 16px;
+  }
+  .second_menu_design {
+    margin-top: 10px;
+    margin-right: 0;
+    text-align: center;
+  }
+  .ul_li {
+    flex-direction: column;
+    align-items: center;
+  }
+  .end {
+    margin: 10px 0;
+    padding: 0;
+  }
+  .second_menu {
+    font-size: 16px;
+  }
+  .design {
+    margin: 10px 0;
+  }
+}
+@media print {
+  body {
+    width: 100%;
+  }
+  .picture {
+    display: none;
+  }
+  .first_menu,
+  .filter,
+  .clothes,
+  .clothes_men,
+  .clothes_women,
+  .block,
+  .block1,
+  .block2,
+  .block3,
+  .block4,
+  .block5,
+  .block6,
+  fieldset,
+  .about_us_lorem,
+  footer,
+  .second_menu_design {
+    display: none;
+  }
+  .title_card,
+  .title_card_menu,
+  li,
+  .white_v,
+  .custom-checkbox_men,
+  .three_category,
+  label,
+  .button_set_all_products,
+  .men,
+  .women,
+  .men_tire,
+  .leaf,
+  .leaf_1,
+  .leaf_2,
+  .size,
+  .circles,
+  .things,
+  .price,
+  .trekking_lorem,
+  .trekking,
+  .footer_lorem,
+  .ul_li,
+  .end,
+  .second_menu,
+  .design {
+    text-align: center;
+  }
+}
+
+        </style>
+    
+        <!-- AMP runtime library -->
+        <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
+    
+        <!-- AMP components -->
+        <!-- <script async custom-element="amp-img" src="https://cdn.ampproject.org/v0/amp-img-0.1.js"></script> -->
+        <!-- <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script> -->
+    </head>
+    
+    <body>
+        <header>
+            <div><amp-img class="picture" src="./template/images/livello_1.png" alt="main.png" width="auto" height="auto" layout="responsive"></amp-img></div>
+            <div class="title_card">
+                <div class="title_card_text">
+                    <h1>
+                        Our clothing, your comfort   
+                    </h1>
+                    <div class="title_card_text_center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </div>
+                </div>
+            </div>
+            <nav class="first_menu">
+                <div class="boot">
+                    <amp-img src="./template/images/icons/livello_8.png" alt="logo_boot" width="auto" height="auto" layout="responsive"></amp-img>
+                </div>
+                <ul class="title_card_menu">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li><amp-img class="cart" src="./template/images/icons/fa-shopping-cart.png" alt="cart" width="auto" height="auto" layout="responsive"></amp-img></li>
+                </ul>
+            </nav>
+           
+            <amp-img class="white_v" src="./template/images/icons/fa-chevron-down.png" alt="white_v" width="auto" height="auto" layout="responsive"></amp-img>
+        </header>
+
+    <main>
+        <div class="filter">
+            <div class="three_category">
+                <div class="custom-checkbox_men custom">
+                    <input type="checkbox" id="men" class="custom-checkbox" name="category" value="men" checked >
+                    <label for="men">MEN</label>
+                </div>
+                <div class="custom-checkbox_women custom">
+                    <input type="checkbox" id="women" class="custom-checkbox" name="category" value="women" checked>
+                    <label for="women">WOMEN</label>
+                </div>
+                <div class="custom-checkbox_children custom">  
+                    <input type="checkbox" id="children" class="custom-checkbox" name="category"  value="children" >
+                    <label for="children">CHILDREN</label>
+                </div>
+            </div>
+            <div class="button_set_all_products">
+                <button type="button" class="set_all_products">SET ALL PRODUCTS</button>
+            </div>
+        </div>
+    
+        <div class="clothes">
+            <div class="men_tire">
+                <h6 class="men">MEN</h6>
+            </div>
+            <div class="leaf_1 leaf">
+                1 / 5
+                <br>
+                < >
+            </div>
+            <div class="clothes_men">
+                <div class="block block1">
+                    
+                    <div class="size">SIZE <img src="./template/images/icons/fa-angle-down.png" alt="v"></div>
+                    <div class="things">T-SHIRT</div>
+                    <div class="circles">
+                        <div class="circle1 circle" ></div>
+                        <div class="circle2 circle"></div>
+                        <div class="circle3 circle"></div>
+                    </div>
+                     <div class="price"><img class="white_v" src="./template/images/prices/5_00.png" alt="5,00"></div>
+                </div>
+        
+
+            <div class="block block2">
+                <div class="size">SIZE <img src="./template/images/icons/fa-angle-down.png" alt="v"></div>
+                <div class="things pants">PANTS FORCLAZ</div>
+                <div class="price"><img class="white_v" src="./template/images/prices/30_00.png" alt="30,00"></div>
+            </div>
+
+            <div class="block block3">
+                <div class="size">10 LITRI</div>
+                <div class="things">BACKPACK</div>
+                <div class="price"><img class="white_v" src="./template/images/prices/60_00.png" alt="60,00"></div>
+            </div>
+        </div>
+        <div class="men_tire">
+            <h6 class="women">WOMEN</h6>
+            <div class="leaf_2 leaf">
+                1 / 5
+                <br>
+                < >
+            </div>
+        </div>
+        <div class="clothes_women">
+            <div class="block block4">
+                <div class="size">SIZE <img src="./template/images/icons/fa-angle-down.png" alt="v"></div>
+                <div class="things">GIACKET</div>
+                <div class="price"><img class="white_v" src="./template/images/prices/60_00.png" alt="60,00"></div>
+            </div>
+
+            <div class="block block5">
+                <div class="size">SIZE <img src="./template/images/icons/fa-angle-down.png" alt="v"></div>
+                <div class="things shoes">TRECKKING SHOES</div>
+                <div class="price"><img class="white_v" src="./template/images/prices/80_00.png" alt="80,00"></div>
+            </div>
+
+            <div class="block block6">
+                <div class="size">SIZE <img src="./template/images/icons/fa-angle-down.png" alt="v"></div>
+                    <div class="circles">
+                        <div class="circle4 circle" ></div>
+                        <div class="circle5 circle" ></div>
+                    </div>
+                    <div class="things">T-SHIRT</div>
+                    <div class="price"><img class="white_v" src="./template/images/prices/20_00.png" alt="20,00"></div> <!--5,00 &#8364; -->
+                </div>
+            </div>
+        </div>
+        <div class="about_us_lorem">
+            <fieldset>
+                <legend class="about_us">ABOUT US</legend>
+                <div class="lorem">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </div>
+            </fieldset>
+        </div>
+        <div class="e-commerce">
+            <img src="./template/images/icons/fa-twitter.png" class="bird" alt="bird">
+            <h3><q>E-commerce psd theme available</q></h3>
+        </div>
+    </main>
+    <footer>
+        <div class="trekking_lorem">
+            <h1 class="trekking">TREKKING</h1>
+            <div class="footer_lorem">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM,QUIS NOSTUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.</div>
+        </div>
+        <div class="second_menu_design">
+            <nav class="second_menu">
+                <ul class="ul_li">
+                    <li class="end" style="border-left: none">CREDIT</li>
+                    <li class="end">PRIVACY</li>
+                    <li class="end">ABOUT</li>
+                    <li class="end">CONTACT</li>
+                </ul>
+            </nav>
+            <div class="design">Design by qianluca cosetta</div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
