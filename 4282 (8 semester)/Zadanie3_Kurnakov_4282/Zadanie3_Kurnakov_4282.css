@@ -1,0 +1,172 @@
+body {
+  font-family: Arial serif;
+  font-weight: 500;
+
+  background: rgb(240, 236, 236);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+}
+
+img {
+  display: flex;
+}
+
+.img_logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
+p {
+  color: #635b44;
+}
+
+nav {
+  text-align: center;
+  padding: 0 20px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-menu {
+  width: 1000px;
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+  margin: 0 auto;
+  list-style-type: none;
+
+  background: rgb(179, 131, 60);
+}
+
+.main-menu li {
+  display: inline-block;
+  padding: 0;
+  margin: 20px;
+}
+
+.main-menu a {
+  color: rgb(255, 255, 255);
+  background: rgb(179, 131, 60);
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  outline: none;
+}
+
+.main-menu a:hover {
+  background: rgb(131, 99, 52);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+}
+.block-h1-p {
+  margin-right: 20px;
+}
+
+hr {
+  margin: 20px 0;
+  width: 100%;
+  height: 5px;
+  background-color: gray;
+}
+
+.textcols {
+  /* display: inline-block;
+	margin-bottom: 20px;
+	padding: 0 20px; */
+
+  display: flex;
+  flex-direction: row;
+}
+
+.textcols-item {
+  margin: 0 20px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  max-width: 960px;
+  min-width: 430px;
+  padding: 0 30px;
+}
+
+h1 {
+  color: #50372b;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+h2 {
+  color: #50372b;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* .textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	background: #fff2e1;
+	margin-right: 5%;
+	font-size: 14px;
+}
+.textcols .textcols-item:last-child {
+	margin-right: 0 ;
+} */
+
+@media screen and (max-width: 480px) {
+  .textcols {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .textcols {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  section {
+    flex-direction: column;
+  }
+}

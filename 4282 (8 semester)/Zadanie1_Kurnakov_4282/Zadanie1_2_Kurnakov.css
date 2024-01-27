@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+}
+
+div {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000000;
+  z-index: 1;
+}
