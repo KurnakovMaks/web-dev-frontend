@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang>
+  <head>
+    <meta charset="utf-8" />
+    <title>Main page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <center><h1>Создать аккаунт</h1></center>
+    <form name="sign_in" class="register" method="post" onsubmit="return hw();">
+      <div class="register_block">
+        <div class="person">
+          Имя <br />
+          <input
+            class="input-field"
+            required
+            placeholder="Name"
+            type="text"
+            size="25"
+            name="name" />
+          <br />
+
+          Фамилия <br />
+          <input
+            class="input-field"
+            input
+            required
+            placeholder="Surname"
+            type="text"
+            size="25"
+            name="surname" />
+          <br />
+
+          Отчество <br />
+          <input
+            class="input-field"
+            input
+            required
+            placeholder="???"
+            type="text"
+            size="25"
+            name="otchestvo" />
+        </div>
+
+        <div class="account">
+          Логин <br />
+          <input
+            class="input-field"
+            required
+            placeholder="Login"
+            type="text"
+            size="25"
+            name="login" />
+          <br />
+
+          Пароль <br />
+          <input
+            class="input-field"
+            required
+            placeholder="Password"
+            type="text"
+            size="25"
+            name="password" />
+          <br />
+
+          Почта <br />
+          <input
+            class="input-field"
+            required
+            placeholder="Email"
+            type="text"
+            size="25"
+            name="email" />
+          <br />
+        </div>
+
+        <div class="other">
+          Какой-нибудь документ: <br />
+          Принимаю <input name="agreement" type="radio" value="yes" required placeholder="" /> || Не
+          принимаю <input name="agreement" type="radio" value="no" required placeholder="" />
+          <br />
+          <hr />
+          <hr />
+          <hr />
+          Принимать звонки<input name="contact" type="checkbox" /> || Принимать письма<input
+            name="contact"
+            type="checkbox" />
+          <hr />
+          Пол:
+          <select name="gender" required placeholder="">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+        </div>
+
+        <hr />
+        <hr />
+        <hr />
+
+        <center>
+          <div class="form-bottom">
+            <input type="submit" value="Зарегистрироваться" />
+          </div>
+        </center>
+      </div>
+    </form>
+  </body>
+</html>

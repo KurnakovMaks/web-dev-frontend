@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <title>Slider</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <div class="slider" id="slider1">
+      <div class="slider_slide_active" style="background-image:url(./images/image1.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image2.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image3.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image4.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image5.jpg);"></div>
+
+      <span class="slider_button slider_button_left" onclick="sliderChange('slider1','left');"
+        >&lt;</span
+      >
+      <span class="slider_button slider_button_right" onclick="sliderChange('slider1','right');"
+        >&gt;</span
+      >
+    </div>
+
+    <div class="slider" id="slider2">
+      <div class="slider_slide_active" style="background-image:url(./images/image1.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image2.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image3.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image4.jpg);"></div>
+      <div class="slider_slide_inactive" style="background-image:url(./images/image5.jpg);"></div>
+
+      <span class="slider_button slider_button_left" onclick="sliderChange('slider2','left');"
+        >&lt;</span
+      >
+      <span class="slider_button slider_button_right" onclick="sliderChange('slider2','right');"
+        >&gt;</span
+      >
+    </div>
+  </body>
+</html>
